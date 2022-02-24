@@ -1,5 +1,18 @@
 /* ----------- GEN STILES ---------- */
 .mt__width--100px {
-  width: 100px;
+  max-width: 100px;
+  width: 20%;
 }
 /* ----------- / GEN STILES ---------- */
+
+/* ---------- JUMBOTRON ------------ */
+.jumbotron {
+  background: #77a1aa url(../img/jumbo-bg.png) center;
+  background-size: cover;
+  /* min-height: 60vh; */
+}
+.jumbotron__content {
+  margin-top: 20vh;
+  position: absolute;
+}
+/* ---------- / JUMBOTRON ------------ */
