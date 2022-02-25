@@ -13,15 +13,21 @@
   max-width: 100px;
   width: 20%;
 }
-
+.mt-btn{
+  border-radius: 25px;
+}
+.game-banner{
+  background-size: cover;
+  min-height: fit-content;
+  padding-bottom: 100px;
+}
 /* ----------- / GEN STILES ---------- */
 
 /* ---------- JUMBOTRON ------------ */
 .jumbotron {
-  background: #77a1aa url(../img/jumbo-bg.png) center;
-  background-size: cover;
-  min-height: fit-content;
-  padding-top: 20vh;
+  height: 60vh;
+  background: #77a1aa url(../img/jumbo-bg.png);
+  background-position: center;
 }
 /* ---------- / JUMBOTRON ------------ */
 /* ---------- GAME CARDS ------------ */
@@ -30,7 +36,7 @@
 }
 .mt__card:hover {
   transform: translate(0, -10%);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--mt-shadow);
 }
 /* .mt__card:focus {
   transform: translate(0, -10%);
@@ -47,6 +53,13 @@
   border-bottom: 1px solid  #0b5ed7;
 }
 /* ---------- / PLAYSTATION 5 ------------ */
+/* ---------- GAME BANNER ------------ */
+.it-take-2{
+  height: 60vh;
+  background: #fece82 url(../img/it-takes-two-hero-banner-desktop.jpg);
+  background-position: center;
+}
+/* ---------- / GAME BANNER ------------ */
 
 @media only screen and (min-width: 768px) {
   .mt__mw-50 {

@@ -24,7 +24,7 @@
 
 <body>
     <!-- BANNER -->
-    <section class="container-fluid bg-black p-2">
+    <section class="container-fluid bg-black py-2">
         <div class="row">
             <div class="col text-end">
                 <img src="./img/sony_logo.svg" class="mt__width--100px" alt="">
@@ -77,26 +77,33 @@
             </div>
         </nav>
         <!-- / NAVBAR -->
-        <div class="row p">
-            <div class="col">
-                <div class="jumbotron">
-                    <div class=" jumbotron__content p-2 p-sm-4 mt__mw-50">
-                        <img src="./img/returnal-hero-banner-logo.png" alt="" class="w-75">
-                        <h2 class=" text-white my-4 fs-1">Rompi il cerchio</h2>
-                        <p class=" text-white lh-sm fw-">Rialzati dopo ogni sconfitta e affronta una nuova sfida
-                            ogni
-                            rinascita in
-                            questo esplosivo
-                            thriller fantascientifico, disponibile in esclusiva su PS5.</p>
-                        <button class="btn btn-primary">Acquista ora</button>
+        <section>
+            <div class="jumbotron game-banner d-flex align-items-end">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 col-lg-3">
+                            <img class="mw-100" src="img/returnal-hero-banner-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <h2 class=" text-white">Rompi il cerchio</h2>
+                            <p class=" text-white">
+                                Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo
+                                esplosivo thriller fantascientifico, disponibile in esclusiva su PS5.
+                            </p>
+                            <div class="mt-btn--border d-inline-block">
+                                <button class="btn btn-primary mt-btn">Acquista ora</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
 
+
     <!-- GAME CARDS -->
-    <section class="container-fluid my-3 p-4">
+    <section class="container my-3 p-4">
         <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 g-3">
             <div class="col">
                 <div class=" rounded-3 overflow-hidden mt__card">
@@ -138,7 +145,7 @@
     </section>
     <!-- / GAME CARDS -->
     <!-- PLAYSTATION 5 -->
-    <section class="container-fluid my-4 p-4">
+    <section class="container my-4 p-4">
         <div class="row my-4 text-center">
             <div class="col">
                 <div>
@@ -163,9 +170,9 @@
             </div>
         </div>
         <div class="row text-center row-cols-3 row-cols-sm-5">
-            <div class="col">
-                <div class=" mt__device-card">
-                    <img class="w-100" src="./img/playstation-5-thumb.png" alt="">
+            <div class="col mt__device-card">
+                <div class="">
+                    <img class="w-100" src="./img/playstation-5-thumb.png" alt="" active>
                     <h5 class=" d-none d-md-inline">Console PS5</h5>
                 </div>
             </div>
@@ -197,6 +204,29 @@
     </section>
     <!-- / PLAYSTATION 5 -->
 
+    <!-- GAME BANNER -->
+    <section>
+        <div class=" it-take-2 game-banner d-flex align-items-end">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-8 col-lg-2">
+                        <img class="mw-100" src="img/it-takes-two-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <h2 class=" text-white">Un'avventura cooperativa selvagia ti attende</h2>
+                        <p class=" text-white">
+                            Trova un amico e partite insieme per l'avventura piu folle delle vostre vite in It Takes
+                            Two, un gioco d'avventura cooperativa a piattaforme che stravolge il suo genere.</p>
+                        <button class="btn btn-primary mt-btn">Acquista ora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- / GAME BANNER -->
 </body>
 
 </html>
