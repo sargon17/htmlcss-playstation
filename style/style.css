@@ -24,6 +24,9 @@
 .mt__bg--gray{
   background-color: #1f1f1f;
 }
+.mt__bg-sand{
+  background-color: #bebcbb;
+}
 .mt__rounded-10{
   border-radius: 10px;
 }
