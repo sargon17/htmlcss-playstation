@@ -21,6 +21,12 @@
   min-height: fit-content;
   padding-bottom: 100px;
 }
+.mt__bg--gray{
+  background-color: #1f1f1f;
+}
+.mt__rounded-10{
+  border-radius: 10px;
+}
 /* ----------- / GEN STILES ---------- */
 
 /* ---------- JUMBOTRON ------------ */
@@ -60,6 +66,14 @@
   background-position: center;
 }
 /* ---------- / GAME BANNER ------------ */
+/* ---------- GAME CARDS ------------ */
+.new-games__card{
+  transition: var(--mt-transition);
+}
+.new-games__card:hover{
+  transform: scale(1.03);
+}
+/* ---------- / GAME CARDS ------------ */
 
 @media only screen and (min-width: 768px) {
   .mt__mw-50 {
