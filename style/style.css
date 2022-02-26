@@ -27,6 +27,9 @@
 .mt__bg-sand{
   background-color: #bebcbb;
 }
+.mt__bg-dark-blue{
+  background-color: #161c3b;
+}
 .mt__rounded-10{
   border-radius: 10px;
 }
