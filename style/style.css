@@ -55,9 +55,6 @@
 .mt__show-menu:hover .mt__dropdown-menu {
   top: 0px;
 }
-.mt__show-menu:focus-within .mt__dropdown-menu {
-  top: 0px;
-}
 
 /* ----------- / NAVBAR ---------- */
 
