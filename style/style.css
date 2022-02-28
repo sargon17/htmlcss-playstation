@@ -42,8 +42,35 @@
 .mt__bg-dark-blue {
   background-color: #161c3b;
 }
+.mt__btn:hover .mt__bs--gray {
+  box-shadow: 0 0 0 2px #363636;
+}
+.mt__bg--orange {
+  background-color: #cd3d0f;
+}
+.mt__btn:hover .mt__bs--orange {
+  box-shadow: 0 0 0 2px #cd3d0f;
+}
 .mt__bg--ps-blue {
   background-color: #00439c;
+}
+.mt__btn:hover .mt__bs--ps-blue {
+  box-shadow: 0 0 0 2px #00439c;
+}
+.mt__text--ps-blue {
+  color: #00439c;
+}
+.mt__bg--clear-gray {
+  background-color: #d9dadc;
+}
+.mt__btn:hover .mt__bs--clear-gray {
+  box-shadow: 0 0 0 2px #d9dadc;
+}
+.mt__bg--white {
+  background-color: #fff;
+}
+.mt__btn:hover .mt__bs--white {
+  box-shadow: 0 0 0 2px #fff;
 }
 .mt__rounded-10 {
   border-radius: 10px;
@@ -73,7 +100,7 @@
 
 /* ---------- JUMBOTRON ------------ */
 .jumbotron {
-  height: 60vh;
+  height: 70vh;
   background: #77a1aa url(../img/jumbo-bg.png);
   background-position: center;
   background-size: cover;
