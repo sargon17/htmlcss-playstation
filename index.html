@@ -23,18 +23,21 @@
 </head>
 
 <body>
-    <!-- BANNER -->
-    <section class="container-fluid bg-black py-2">
-        <div class="row">
-            <div class="col text-end">
-                <img src="./img/sony_logo.svg" class="mt__width--100px" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- / BANNER -->
+
     <!-- NAVBAR -->
     <!-- todo finish the menu -->
-    <header class="container-fluid p-0">
+    <header class="container-fluid p-0 position-fixed top-0" style="z-index: 3;">
+
+        <!-- BANNER -->
+        <section class="container-fluid bg-black py-2">
+            <div class="row">
+                <div class="col text-end">
+                    <img src="./img/sony_logo.svg" class="mt__width--100px" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- / BANNER -->
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./img/play_logo.svg" alt=""></a>
@@ -45,61 +48,302 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                        <li class="nav-item dropdown position-static mt__show-menu py-3">
+                            <a class="nav-link dropdown-toggle mt__show-menu fw-bold" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Giochi
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
+                            <ul class="w-100 text-center mt__dropdown-menu mt__margin-top--90 bg-white mt__show-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+
+                                <div class="dropdown-divider"></div>
+                                <div>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                </div>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                        <li class="nav-item dropdown position-static mt__show-menu py-3">
+                            <a class="nav-link dropdown-toggle mt__show-menu fw-bold" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hardware
+                            </a>
+                            <ul class="w-100 text-center mt__dropdown-menu mt__margin-top--90 bg-white mt__show-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <div>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown position-static mt__show-menu py-3">
+                            <a class="nav-link dropdown-toggle mt__show-menu fw-bold" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servizi
+                            </a>
+                            <ul class="w-100 text-center mt__dropdown-menu mt__margin-top--90 bg-white mt__show-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <div>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown position-static mt__show-menu py-3">
+                            <a class="nav-link dropdown-toggle mt__show-menu fw-bold" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Novità
+                            </a>
+                            <ul class="w-100 text-center mt__dropdown-menu mt__margin-top--90 bg-white mt__show-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <div>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown position-static mt__show-menu py-3">
+                            <a class="nav-link dropdown-toggle mt__show-menu fw-bold" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Fai acquisti
+                            </a>
+                            <ul class="w-100 text-center mt__dropdown-menu mt__margin-top--90 bg-white mt__show-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <div class="dropdown-divider">
+                                </div>
+                                <div>
+                                    <li class=" d-inline-block">
+                                        <a class="dropdown-item" href="#">Sub
+                                            link</a>
+                                    </li>
+                                    <li class=" d-inline-block">
+                                        <a class="dropdown-item" href="#">Sub
+                                            link</a>
+                                    </li>
+                                    <li class=" d-inline-block">
+                                        <a class="dropdown-item" href="#">Sub
+                                            link</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown position-static mt__show-menu py-3">
+                            <a class="nav-link dropdown-toggle mt__show-menu fw-bold" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Supporto
+                            </a>
+                            <ul class="w-100 text-center mt__dropdown-menu mt__margin-top--90 bg-white mt__show-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <div class="dropdown-divider">
+                                </div>
+                                <div>
+                                    <li class=" d-inline-block">
+                                        <a class="dropdown-item" href="#">Sub
+                                            link</a>
+                                    </li>
+                                    <li class=" d-inline-block">
+                                        <a class="dropdown-item" href="#">Sub
+                                            link</a>
+                                    </li>
+                                    <li class=" d-inline-block">
+                                        <a class="dropdown-item" href="#">Sub
+                                            link</a>
+                                    </li>
+                                </div>
+                            </ul>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown position-static mt__show-menu py-3">
+                            <a class="nav-link dropdown-toggle mt__show-menu fw-bold" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Giochi
+                            </a>
+                            <ul class="w-100 text-center mt__dropdown-menu mt__margin-top--90 bg-white mt__show-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <li class=" d-inline-block">
+                                    <a class="dropdown-item text-center bg-white mt__hard-shadow" href="#">
+                                        <img class=" d-block m-auto mt__width-80" src="img/play-menu-ico.png" alt="">
+                                        PS5
+                                    </a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <div>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                    <li class=" d-inline-block"><a class="dropdown-item" href="#">Sub link</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="py-3">
+                            <button class="btn btn-primary mt__btn">Accedi</button>
+                        </li>
+                        <li class="py-3">
+                            <img class="w-75 m-auto" src="./img/lens.svg" alt="">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <!-- / NAVBAR -->
-        <section>
-            <div class="jumbotron game-banner d-flex align-items-end">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-8 col-lg-3">
-                            <img class="mw-100" src="img/returnal-hero-banner-logo.png" alt="">
-                        </div>
+    </header>
+    <!-- / NAVBAR -->
+    <section class=" mt__margin-top--90">
+        <div class="jumbotron game-banner d-flex align-items-end">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-lg-3">
+                        <img class="mw-100" src="img/returnal-hero-banner-logo.png" alt="">
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4">
-                            <h2 class=" text-white">Rompi il cerchio</h2>
-                            <p class=" text-white">
-                                Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo
-                                esplosivo thriller fantascientifico, disponibile in esclusiva su PS5.
-                            </p>
-                            <div class="mt-btn--border d-inline-block">
-                                <button class="btn btn-primary mt__btn">Acquista ora</button>
-                            </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <h2 class=" text-white">Rompi il cerchio</h2>
+                        <p class=" text-white">
+                            Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo
+                            esplosivo thriller fantascientifico, disponibile in esclusiva su PS5.
+                        </p>
+                        <div class="mt-btn--border d-inline-block">
+                            <button class="btn btn-primary mt__btn">Acquista ora</button>
                         </div>
                     </div>
                 </div>
             </div>
-    </header>
+        </div>
+    </section>
 
 
     <!-- GAME CARDS -->
@@ -161,7 +405,7 @@
             <div class="col">
                 <h2>Console PlayStation 5</h2>
                 <p class=" text-secondary">Sperimenta la nuova generazione di incredibili giochi PlayStation.</p>
-                <button class="btn btn-primary">Maggiori informazioni</button>
+                <button class="btn btn-primary mt__btn">Maggiori informazioni</button>
             </div>
             <div class="col">
                 <div>
@@ -530,8 +774,8 @@
                 </div>
                 <div class="col">
                     <div class="row">
-                        <div class="col-2">
-                            <img class="w-75 p-2" src="./img/sie-logo.svg" alt="">
+                        <div class="col-6 col-md-2">
+                            <img class="w-100 w-lg-75 p-2" src="./img/sie-logo.svg" alt="">
                         </div>
                     </div>
                     <div class="row">

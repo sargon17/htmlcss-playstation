@@ -1,6 +1,7 @@
-:root{
+:root {
   --mt-transition: all 0.2s ease-in-out;
-  --mt-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25):
+  --mt-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  --mt-hard-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 /* ----------- GEN STILES ---------- */
 * {
@@ -8,41 +9,64 @@
   font-size: 14px;
 }
 
-
 .mt__width--100px {
   max-width: 100px;
   width: 20%;
 }
-.mt__btn{
+.mt__btn {
   border-radius: 25px;
 }
-.game-banner{
-  background-size: cover;
+.game-banner {
   min-height: fit-content;
   padding-bottom: 100px;
 }
-.mt__bg--gray{
+.mt__bg--gray {
   background-color: #1f1f1f;
 }
-.mt__bg-sand{
+.mt__bg-sand {
   background-color: #bebcbb;
 }
-.mt__bg-dark-blue{
+.mt__bg-dark-blue {
   background-color: #161c3b;
 }
-.mt__bg--ps-blue{
+.mt__bg--ps-blue {
   background-color: #00439c;
 }
-.mt__rounded-10{
+.mt__rounded-10 {
   border-radius: 10px;
 }
+.mt__margin-top--90 {
+  margin-top: 90px;
+}
+.mt__width-80 {
+  width: 80px;
+}
+.mt__hard-shadow:hover {
+  box-shadow: var(--mt-hard-shadow);
+}
 /* ----------- / GEN STILES ---------- */
+
+/* ----------- NAVBAR ---------- */
+.mt__dropdown-menu {
+  position: fixed;
+  top: -1000px;
+  left: 0;
+}
+.mt__show-menu:hover .mt__dropdown-menu {
+  top: 0px;
+}
+.mt__show-menu:focus-within .mt__dropdown-menu {
+  top: 0px;
+}
+
+/* ----------- / NAVBAR ---------- */
 
 /* ---------- JUMBOTRON ------------ */
 .jumbotron {
   height: 60vh;
   background: #77a1aa url(../img/jumbo-bg.png);
   background-position: center;
+  background-size: cover;
 }
 /* ---------- / JUMBOTRON ------------ */
 /* ---------- GAME CARDS ------------ */
@@ -51,35 +75,35 @@
 }
 .mt__card:hover {
   transform: translate(0, -10%);
-  box-shadow: var(--mt-shadow);
 }
 /* .mt__card:focus {
   transform: translate(0, -10%);
 } */
 /* ---------- / GAME CARDS ------------ */
 /* ---------- PLAYSTATION 5 ------------ */
-.mt__device-card{
+.mt__device-card {
   transition: var(--mt-transition);
   opacity: 50%;
-  border-bottom: 1px solid  transparent;
+  border-bottom: 1px solid transparent;
 }
-.mt__device-card:hover{
+.mt__device-card:hover {
   opacity: 100%;
-  border-bottom: 1px solid  #0b5ed7;
+  border-bottom: 1px solid #0b5ed7;
 }
 /* ---------- / PLAYSTATION 5 ------------ */
 /* ---------- GAME BANNER ------------ */
-.it-take-2{
+.it-take-2 {
   height: 60vh;
   background: #fece82 url(../img/it-takes-two-hero-banner-desktop.jpg);
   background-position: center;
+  background-size: cover;
 }
 /* ---------- / GAME BANNER ------------ */
 /* ---------- GAME CARDS ------------ */
-.new-games__card{
+.new-games__card {
   transition: var(--mt-transition);
 }
-.new-games__card:hover{
+.new-games__card:hover {
   transform: scale(1.03);
 }
 /* ---------- / GAME CARDS ------------ */
