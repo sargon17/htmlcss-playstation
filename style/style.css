@@ -84,6 +84,9 @@
 .mt__hard-shadow:hover {
   box-shadow: var(--mt-hard-shadow);
 }
+.mt__fs-0 {
+  font-size: 0px;
+}
 /* ----------- / GEN STILES ---------- */
 
 /* ----------- NAVBAR ---------- */
@@ -91,9 +94,10 @@
   position: fixed;
   top: -1000px;
   left: 0;
+  z-index: -1;
 }
 .mt__show-menu:hover .mt__dropdown-menu {
-  top: 0px;
+  top: 15px;
 }
 
 /* ----------- / NAVBAR ---------- */
