@@ -2,100 +2,143 @@
   --mt-transition: all 0.2s ease-in-out;
   --mt-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   --mt-hard-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+
+  /* colors */
+  --mt-gray: #1f1f1f;
+  --mt-sand: #bebcbb;
+  --mt-dark-blue: #161c3b;
+  --mt-orange: #cd3d0f;
+  --mt-ps-blue: #00439c;
+  --mt-clear-gray: #d9dadc;
+  --mt-white: #fff;
+  /* / colors */
 }
+
 /* ----------- GEN STILES ---------- */
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+}
+
+/* MT BTN */
+.mt__btn {
+  border-radius: 25px;
+}
+
+.mt__btn-border {
+  padding: 2px;
+  border-radius: 20px;
+  transition: var(--mt-transition);
+}
+
+.mt__btn:hover .mt__btn-border {
+  box-shadow: 0 0 0 2px #363636;
+}
+
+.mt__btn-inner {
+  background-color: #363636;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+/* / MT BTN */
+
+/* MT BG COLORS */
+
+.mt__bg--gray {
+  background-color: var(--mt-gray);
+}
+
+.mt__bg-sand {
+  background-color: var(--mt-sand);
+}
+
+.mt__bg-dark-blue {
+  background-color: var(--mt-dark-blue);
+}
+
+.mt__bg--orange {
+  background-color: var(--mt-orange);
+}
+.mt__bg--ps-blue {
+  background-color: var(--mt-ps-blue);
+}
+.mt__bg--clear-gray {
+  background-color: var(--mt-clear-gray);
+}
+.mt__bg--white {
+  background-color: var(--mt-white);
+}
+/* / MT BG COLORS */
+/*  MT TEXT COLORS */
+.mt__text--ps-blue {
+  color: var(--mt-ps-blue);
+}
+/* / MT TEXT COLORS */
+
+/* MT BTN HOVER BORDERS */
+.mt__btn:hover .mt__bs--gray {
+  box-shadow: 0 0 0 2px var(--mt-gray);
+}
+
+.mt__btn:hover .mt__bs--orange {
+  box-shadow: 0 0 0 2px var(--mt-orange);
+}
+
+.mt__btn:hover .mt__bs--ps-blue {
+  box-shadow: 0 0 0 2px var(--mt-ps-blue);
+}
+
+.mt__btn:hover .mt__bs--clear-gray {
+  box-shadow: 0 0 0 2px var(--mt-clear-gray);
+}
+
+.mt__btn:hover .mt__bs--white {
+  box-shadow: 0 0 0 2px var(--mt-white);
+}
+/* / MT BTN HOVER BORDERS */
+
+.mt__hard-shadow:hover {
+  box-shadow: var(--mt-hard-shadow);
 }
 
 .mt__width--100px {
   max-width: 100px;
   width: 20%;
 }
-.mt__btn {
-  border-radius: 25px;
-}
-.mt__btn-border {
-  padding: 2px;
-  border-radius: 20px;
-  transition: var(--mt-transition);
-}
-.mt__btn:hover .mt__btn-border {
-  box-shadow: 0 0 0 2px #363636;
-}
-.mt__btn-inner {
-  background-color: #363636;
-  padding: 5px 15px;
-  border-radius: 20px;
-}
+
 .game-banner {
   min-height: fit-content;
   padding-bottom: 100px;
 }
-.mt__bg--gray {
-  background-color: #1f1f1f;
-}
-.mt__bg-sand {
-  background-color: #bebcbb;
-}
-.mt__bg-dark-blue {
-  background-color: #161c3b;
-}
-.mt__btn:hover .mt__bs--gray {
-  box-shadow: 0 0 0 2px #363636;
-}
-.mt__bg--orange {
-  background-color: #cd3d0f;
-}
-.mt__btn:hover .mt__bs--orange {
-  box-shadow: 0 0 0 2px #cd3d0f;
-}
-.mt__bg--ps-blue {
-  background-color: #00439c;
-}
-.mt__btn:hover .mt__bs--ps-blue {
-  box-shadow: 0 0 0 2px #00439c;
-}
-.mt__text--ps-blue {
-  color: #00439c;
-}
-.mt__bg--clear-gray {
-  background-color: #d9dadc;
-}
-.mt__btn:hover .mt__bs--clear-gray {
-  box-shadow: 0 0 0 2px #d9dadc;
-}
-.mt__bg--white {
-  background-color: #fff;
-}
-.mt__btn:hover .mt__bs--white {
-  box-shadow: 0 0 0 2px #fff;
-}
+
 .mt__rounded-10 {
   border-radius: 10px;
 }
+
 .mt__margin-top--90 {
   margin-top: 90px;
 }
+
 .mt__width-80 {
   width: 80px;
 }
-.mt__hard-shadow:hover {
-  box-shadow: var(--mt-hard-shadow);
-}
+
 .mt__fs-0 {
   font-size: 0px;
 }
+
 /* ----------- / GEN STILES ---------- */
 
 /* ----------- NAVBAR ---------- */
+
 .mt__dropdown-menu {
   position: fixed;
   top: -1000px;
   left: 0;
   z-index: -1;
 }
+
 .mt__show-menu:hover .mt__dropdown-menu {
   top: 15px;
 }
@@ -103,50 +146,68 @@
 /* ----------- / NAVBAR ---------- */
 
 /* ---------- JUMBOTRON ------------ */
+
 .jumbotron {
   height: 70vh;
   background: #77a1aa url(../img/jumbo-bg.png);
   background-position: center;
   background-size: cover;
 }
+
 /* ---------- / JUMBOTRON ------------ */
+
 /* ---------- GAME CARDS ------------ */
+
 .mt__card {
   transition: all 0.2s ease-in-out;
 }
+
 .mt__card:hover {
   transform: translate(0, -10%);
 }
+
 /* .mt__card:focus {
   transform: translate(0, -10%);
 } */
+
 /* ---------- / GAME CARDS ------------ */
+
 /* ---------- PLAYSTATION 5 ------------ */
+
 .mt__device-card {
   transition: var(--mt-transition);
   opacity: 50%;
   border-bottom: 1px solid transparent;
 }
+
 .mt__device-card:hover {
   opacity: 100%;
   border-bottom: 1px solid #0b5ed7;
 }
+
 /* ---------- / PLAYSTATION 5 ------------ */
+
 /* ---------- GAME BANNER ------------ */
+
 .it-take-2 {
   height: 60vh;
   background: #fece82 url(../img/it-takes-two-hero-banner-desktop.jpg);
   background-position: center;
   background-size: cover;
 }
+
 /* ---------- / GAME BANNER ------------ */
+
 /* ---------- GAME CARDS ------------ */
+
 .new-games__card {
   transition: var(--mt-transition);
 }
+
 .new-games__card:hover {
   transform: scale(1.03);
 }
+
 /* ---------- / GAME CARDS ------------ */
 
 @media only screen and (min-width: 768px) {
